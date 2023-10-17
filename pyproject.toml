@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "estrutura-ws-101"
+version = "0.1.0"
+description = "First steps with a general structure for a project."
+authors = ["Alecsander Guimaraes <leelecko@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.11.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
