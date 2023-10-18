@@ -3,6 +3,14 @@
 
 ### Python ###
 
+# To untrack a single file that has 
+# already been added/initialized to your 
+# repository, i.e., stop tracking the file 
+# but not delete it from your system use: 
+# git rm --cached filename
+# to remove all tracked files:
+# git rm --cached .
+
 # personal one
 .vscode
 .vscode/
