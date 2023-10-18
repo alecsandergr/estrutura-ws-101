@@ -3,8 +3,8 @@
 
 ### Python ###
 
-# personal stuff
 .vscode
+.vscode/
 poetry.lock
 
 # Byte-compiled / optimized / DLL files
