@@ -15,7 +15,7 @@ pyenv local <your-python-version>
 
 After selecting your python version, a new file `.python-version` will be created in your repository.
 
-# Step 2: Virtual environment
+## Step 2: Virtual environment
 
 A good practice is to set a new environment for your project. You can use `venv`, `poetry`, among others. For this project, I will use `poetry` beacuse it offers not only the a separate environment, but also the ability to document all the packages from the environment and if anyone wants to reproduce your repository it could be done using a single command, `poetry install`.
 
@@ -34,4 +34,16 @@ poetry init
 ```
 
 After the definitions a new file `pyproject.toml` is created with all the the configurations for your project and you can use `poetry shell` to use your brand new environment.
+
+## Step 3: Create the folder structure
+
+Add a basic folder structure, you can add:
+- src: your code goes here
+- data: if you have any data, add it here
+- tests: for your tests
+- docs: for your documentation
+
+## Step 4: Create a .gitignore file
+
+You can use gitignore.io website and search for Python to get a template.
 
