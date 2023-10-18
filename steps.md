@@ -33,5 +33,5 @@ poetry init
 # - main and development dependencies interactively 
 ```
 
-After the definitions a new file `pyproject.toml` is created with all the the configurations for your project.
+After the definitions a new file `pyproject.toml` is created with all the the configurations for your project and you can use `poetry shell` to use your brand new environment.
 
