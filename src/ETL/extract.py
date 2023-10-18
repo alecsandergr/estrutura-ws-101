@@ -1,3 +1,5 @@
+"""modulo de extract necessárias para consolidar os dados de entrada."""
+
 import os
 import glob
 import pandas as pd
