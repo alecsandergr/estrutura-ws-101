@@ -1,6 +1,6 @@
 """pipeline principal do projeto."""
 
-from ETL.pipeline import pipeline_completa
+from ETL import pipeline_completa
 
 def consolida_dados() -> None:
     '''
