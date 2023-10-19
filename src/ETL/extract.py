@@ -11,13 +11,19 @@ def extract_from_excel(path: str) -> List[pd.DataFrame]:
     e retornar uma lista de dataframes.
 
     Args: 
-        path (str): caminho da pasta.
+        path (str): Caminho da pasta.
 
     Returns: 
-        List[pd.DataFrame]: lista de dataframes.
+        List[pd.DataFrame]: Lista de dataframes.
+
+    Raises:
+        ValueError: Se nao tem arquivos na pasta. 
     '''
 
     all_files = glob.glob(os.path.join(path, '*.xlsx'))
+    if not all_files:
+        raise ValueError('No Excel files found in the specified folder')
+
     data_frame_list = [pd.read_excel(file) for file in all_files]
 
     return data_frame_list

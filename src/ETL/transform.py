@@ -13,5 +13,12 @@ def concat_data_frames(data_frame_list: List[pd.DataFrame]) -> pd.DataFrame:
 
     Returns:
         pd.DataFrame: dataframe
+
+    Raises:
+        ValueError: if data_frame_list is empty.
     '''
+
+    if data_frame_list == []:
+        raise ValueError('No data to transform')
+
     return pd.concat(data_frame_list, ignore_index=True)
