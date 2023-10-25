@@ -1,12 +1,13 @@
 """modulo com todas as transformações necessárias para consolidar os dados de entrada."""
 
-import pandas as pd
 from typing import List
 
+import pandas as pd
+
+
 def concat_data_frames(data_frame_list: List[pd.DataFrame]) -> pd.DataFrame:
-    '''
-    Função para transformar uma lista de dataframes
-    em um único dataframe.
+    """
+    Função para transformar uma lista de dataframes em um único dataframe.
 
     Args:
         data_frame_list (List[pd.DataFrame]): lista de dataframes.
@@ -16,9 +17,9 @@ def concat_data_frames(data_frame_list: List[pd.DataFrame]) -> pd.DataFrame:
 
     Raises:
         ValueError: if data_frame_list is empty.
-    '''
 
+    """
     if data_frame_list == []:
-        raise ValueError('No data to transform')
+        raise ValueError("No data to transform")
 
     return pd.concat(data_frame_list, ignore_index=True)

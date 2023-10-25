@@ -47,3 +47,71 @@ Add a basic folder structure, you can add:
 
 You can use gitignore.io website and search for Python to get a template.
 
+## Step 5: Format your code
+
+You can use some libraries or extensions to help you with that, like:
+    - black (also has a vscode extension)
+    - isort (also has a vscode extension)
+    - blue
+    - flake8
+    - ruff (also has a vscode extension), this one combines black and isort libraries
+    - pydocstyle (you can use autoDocstring to help you to create the docstring): check if you docstring is correct
+
+Add the following lines to your `pyproject.toml` file:
+```toml
+[tool.isort]
+profile = "black" # change this accordingly
+known_third_party = []
+```
+
+### black commands
+```sh
+# format the scripts for the whole project
+black .
+# format one file
+black {path}
+```
+
+### isort commands
+```sh
+# sort the libraries for the whole project
+isort .
+# sort one file
+isort {path}
+```
+
+### blue commands
+```sh
+# format the scripts for the whole project
+blue .
+# format one file
+blue {path}
+```
+
+### pydocstyle commands
+```sh
+# check the docstring format for the whole project
+pydocstyle .
+# check the docstring format one file
+pydocstyle {path}
+```
+
+## Step 6: Automation of your tasks
+
+Instead of running all the commands you need manually, you can create tasks using `taskipy` to run them for you.
+
+```toml
+# Add this to your pyproject.toml file
+# if you are using blue format comment the isort configuration
+[tool.taskipy.tasks]
+format = 'isort . && black .'
+```
+
+```bash
+# Install the library
+poetry add taskipy
+# Run the task
+task format # format is name of the task
+```
+
+
