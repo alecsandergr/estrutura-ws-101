@@ -1,3 +1,5 @@
+# Steps
+
 ## Step 1: Select your python version
 
 If you use pyenv, you can add a new python version and select it using the following command:
@@ -114,4 +116,12 @@ poetry add taskipy
 task format # format is name of the task
 ```
 
+## Step 7: Create documentation
 
+You can use mkdocs to create documentation and other services to help with documentation.
+
+```bash
+poetry add mkdocs mkdocstrings-python pygments mkdocs-material pymdown-extensions
+# Create the initial setup
+mkdocs new .
+```
