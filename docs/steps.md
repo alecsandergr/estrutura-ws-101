@@ -19,7 +19,7 @@ After selecting your python version, a new file `.python-version` will be create
 
 ## Step 2: Virtual environment
 
-A good practice is to set a new environment for your project. You can use `venv`, `poetry`, among others. For this project, I will use `poetry` beacuse it offers not only the a separate environment, but also the ability to document all the packages from the environment and if anyone wants to reproduce your repository it could be done using a single command, `poetry install`.
+A good practice is to set a new environment for your project. You can use `venv`, `poetry`, among others. For this project, I will use `poetry` because it offers not only the a separate environment, but also the ability to document all the packages from the environment and if anyone wants to reproduce your repository it could be done using a single command, `poetry install`.
 
 ```sh
 # Setting the environment
